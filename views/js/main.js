@@ -503,8 +503,8 @@ function updatePositions() {
   window.performance.mark("mark_start_frame");
 //Changed queryselect to getElement
 //added the scrollPosition so it didn't have to do the calculation everytime. 
-  var items = document.getElementByClassName('mover');
-  var scrollPosition = document.body.scrollTop/1250;
+  var items = document.getElementsByClassName('mover');
+  var scrollPosition = document.body.scrollTop / 1250;
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin((scrollPosition) + (i % 5));
     
